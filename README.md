@@ -28,9 +28,9 @@ To produce a deployable production mode WAR:
 References
 -------------------------
 
-*1.https://spring.io/docs
-*2.http://o7planning.org/en/10201/java-hibernate-tutorial-for-beginners
-*3.https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#jdbc
+**1.https://spring.io/docs
+**2.http://o7planning.org/en/10201/java-hibernate-tutorial-for-beginners
+**3.https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#jdbc
 -------------------------
 
 

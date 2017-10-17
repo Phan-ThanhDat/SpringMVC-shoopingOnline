@@ -31,7 +31,7 @@ public class DatabaseThoiTrang {
 				// TODO Auto-generated method stub
 				
 				NhanVien nv = new NhanVien();
-				nv.tennhanvien = rowResult.getString("tenNhanVien");
+				nv.tenNhanVien = rowResult.getString("tenNhanVien");
 				nv.tuoi = rowResult.getInt("tuoi");
 				return nv;
 			}
@@ -40,7 +40,7 @@ public class DatabaseThoiTrang {
 		
 		for (NhanVien valueNv : listNhanVien)
 		{
-			System.out.println("Gia tri" + valueNv.tennhanvien + valueNv.tuoi);
+			System.out.println("Gia tri" + valueNv.tenNhanVien + valueNv.tuoi);
 		}
 	}
 }

@@ -1,37 +1,28 @@
 package com.checongbinh.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity(name="nhanvien")
 public class NhanVien {
-	String tennhanvien;
-	String diachi;
+	
+	@Id
+	int idNhanVien;
+	
+	String tenNhanVien;
+	
 	int tuoi;
-	GiamDoc doc;
 	
-	
-
-	public GiamDoc getDoc() {
-		return doc;
-	}
-
-	public void setDoc(GiamDoc doc) {
-		this.doc = doc;
-	}
 
 	public String getTennhanvien() {
-		return tennhanvien;
+		return tenNhanVien;
 	}
 
 	public void setTennhanvien(String tennhanvien) {
-		this.tennhanvien = tennhanvien;
+		this.tenNhanVien = tennhanvien;
 	}
 
-	public String getDiachi() {
-		return diachi;
-	}
-
-	public void setDiachi(String diachi) {
-		this.diachi = diachi;
-	}
+	
 
 	public int getTuoi() {
 		return tuoi;
@@ -46,25 +37,30 @@ public class NhanVien {
 		
 	}
 	
-	public NhanVien(GiamDoc doc){
-		this.doc = doc;
-	}
 	
 	public NhanVien(String tennhanvien,int tuoi){
-		this.tennhanvien = tennhanvien;
+		this.tenNhanVien = tennhanvien;
 		this.tuoi = tuoi;
 	}
 	
 	public NhanVien(String tennhanvien,int tuoi,String diachi){
-		this.tennhanvien = tennhanvien;
+		this.tenNhanVien = tennhanvien;
 		this.tuoi = tuoi;
-		this.diachi = diachi;
+		
 	}
 	
 
 	
 	public void getThongBao(){
-		System.out.println("Hello ban " + tennhanvien + " " + tuoi);
+		System.out.println("Hello ban " + tenNhanVien + " " + tuoi);
+	}
+
+	public int getIdNhanVien() {
+		return idNhanVien;
+	}
+
+	public void setIdNhanVien(int idNhanVien) {
+		this.idNhanVien = idNhanVien;
 	}
 
 }
